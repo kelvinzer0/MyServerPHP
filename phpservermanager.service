@@ -1,0 +1,12 @@
+[Unit]
+Description=PHP Server Manager
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/phpservermanager
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
